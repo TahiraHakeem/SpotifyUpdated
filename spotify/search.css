@@ -1,0 +1,183 @@
+@import url("style.css");
+/********************** 
+
+
+
+        Search
+
+
+
+************************/
+
+
+.search-results {
+    display: flex;
+    gap: 48px;
+    height: auto;
+}
+
+.search-results .title,
+.artist>.title {
+    margin-left: 20px;
+    color: var(--content-primary);
+    opacity: 0.6;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.search-results>section:first-child {
+    flex: 3;
+}
+
+.search-results>section:last-child {
+    flex: 1;
+}
+
+.search-result-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 8px;
+}
+
+.search-result-container>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--primary);
+}
+
+.search-result-container>div>div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.search-result-container>div>div>img {
+    width: 56px;
+    /* height: 56px; */
+    border-radius: 4px;
+}
+
+.search-result-container>div>div>h4 {
+    font-size: 16px;
+    color: var(--content-primary);
+    font-weight: 600;
+}
+
+.search-result-container>div>p {
+    font-size: 16px;
+    color: var(--content-primary);
+    opacity: 0.6;
+    font-weight: 500;
+}
+
+/* .search-results>section:last-child {
+    padding: 20px;
+} */
+
+.search-results>section:last-child>div {
+    margin-top: 12px;
+    padding: 20px;
+    background-color: var(--primary);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.search-results>section:last-child>div>h4 {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--content-primary);
+}
+
+.search-results>section:last-child>div p {
+    font-size: 16px;
+    color: var(--content-primary);
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.search-results .song-stats {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-results .song-tags {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-results .song-tags>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    padding: 6px 8px;
+    border-radius: 12px;
+    background-color: var(--bg-gray);
+}
+
+.search-results .song-tags>div>span {
+    line-height: 5px;
+    font-size: 14px;
+    color: var(--content-primary);
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.search-top-result>div>img {
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 8px;
+}
+
+.artist {
+    margin-top: 40px;
+}
+
+.artist-card-container {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.artist .artist-card {
+    flex: calc(18% - 20px);
+    padding: 10px;
+    background-color: var(--primary);
+    border-radius: 6px;
+}
+
+.artist .artist-card>img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.artist .artist-card>h4 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: var(--content-primary);
+    font-weight: 700;
+}
+
+.artist .artist-card>div>span {
+    line-height: 5px;
+    font-size: 14px;
+    color: var(--content-primary);
+    opacity: 0.9;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background-color: var(--bg-gray);
+}

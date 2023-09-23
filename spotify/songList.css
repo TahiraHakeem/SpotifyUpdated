@@ -1,0 +1,41 @@
+.listSongs{
+    display: flex;
+    flex-direction: column;
+}
+.mixSongs{
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary);
+    border-radius: 8px;
+    height: 100px;
+    padding: 16px;
+}
+
+.mixSongs>.sec {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+}
+
+.mixSongs>.sec>img {
+    border-radius: 4px;
+
+}
+
+.mixSongs>.sec>.write>p:first-child {
+    font-weight: 600;
+    line-height: 16px;
+    font-size: 24px;
+}
+
+.mixSongs>.sec>.write>span {
+    font-size: 20px;
+    color: rgba(68, 67, 67, 0.919);
+}
+
+.mixSongs>.sec>.write>p:nth-of-type(2) {
+    font-size: 20px;
+}

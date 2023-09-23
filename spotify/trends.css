@@ -1,0 +1,88 @@
+/* ----------Main-------- */
+.trending {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.trending>div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+div>.hits {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    gap: 1%;
+}
+
+.hits>div {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    flex: calc(20% - 1%);
+    background-color: var(--primary);
+    gap: 12px;
+    padding: 16px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.hits>div>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.hitsOfMonth {
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    gap: 1%;
+}
+
+.hitsOfMonth>div {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    /* flex: calc(20% - 1%); */
+    background-color: var(--primary);
+    gap: 12px;
+    padding: 16px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.hitsOfMonth>div>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ======Main First Section========== */
+
+/* -----Greeting---- */
+.greet {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.greet>h3 {
+    font-size: 24px;
+}
+
+.greet>h3:first-child {
+    color: var(--accent);
+    font-size: 24px;
+}
