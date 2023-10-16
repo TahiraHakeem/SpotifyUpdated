@@ -15,6 +15,7 @@
 <body>
     <div class="container">
         <aside class="aside">
+            <!-- 1 -->
             <section class="profile">
                 <div>
                     <div class="image">
@@ -29,6 +30,7 @@
                     filter_list
                 </i>
             </section>
+            <!-- 2 -->
             <section class="library">
                 <div>
                     <div class="playlist">
@@ -43,26 +45,13 @@
                         </i>
                     </div>
                 </div>
+
                 <div id="library">
+
                     <div class="musiclist">
                         <div>
-                            <div class="music">
-                                <img src="assets/songImages/28.jpg" alt="" height="72px" width="72px">
-                            </div>
-                            <div class="head1">
-                                <h5>24.06.23</h5>
-                                <p>Hasancan Ozmen</p>
-                            </div>
-                        </div>
-                        <div class="icon">
-                            <i class="ri-pushpin-fill"></i>
-                        </div>
-                    </div>
-                    <div class="musiclist">
-                        <div>
-                            <div class="music">
-                                <img src="assets/songImages/28.jpg" alt="" height="72px" width="72px">
-                            </div>
+                            <img src="assets/songImages/28.jpg" alt="" height="72px" width="72px">
+
                             <div class="head1">
                                 <h5>B3</h5>
                                 <p>Ozancan Direk</p>
@@ -71,17 +60,28 @@
                     </div>
                     <div class="musiclist">
                         <div>
-                            <div class="music">
-                                <img src="assets/songImages/28.jpg" alt="" height="72px" width="72px">
-                            </div>
+                            <img src="assets/songImages/28.jpg" alt="" height="72px" width="72px">
+
                             <div class="head1">
-                                <h5>New</h5>
-                                <p>Hasancan Ozmen</p>
+                                <h5>B3</h5>
+                                <p>Ozancan Direk</p>
                             </div>
                         </div>
                     </div>
+                    <div class="musiclist">
+                        <div>
+                            <img src="assets/songImages/28.jpg" alt="" height="72px" width="72px">
+
+                            <div class="head1">
+                                <h5>B3</h5>
+                                <p>Ozancan Direk</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
+            <!-- 3 -->
             <section>
                 <div class="play">
                     <div class="song">
@@ -91,10 +91,18 @@
                         <img id="songImg" src="assets/songImages/dendalions.webp" alt="">
                         <i class="ri-heart-fill"></i>
                     </div>
+
                     <div class="songName">
-                        <h4 id="title">Dandelions</h4>
-                        <p id="artist">Ruth B</p>
+                        <div>
+                            <h4 id="title">Dandelions</h4>
+                            <p id="artist">Ruth B</p>
+                        </div>
                     </div>
+
+
+                </div>
+
+                <div>
                     <div class="playIcon">
                         <i class="material-symbols-outlined" id="previous">
                             skip_previous
@@ -106,30 +114,32 @@
                             skip_next
                         </i>
                     </div>
-                </div>
-                <audio src="./assets/audio/Dandelions.mp3" id="audio-play"></audio>
-                <div class="audioPlay">
-                    <span id="currentTime">00:00</span>
-                    <input type="range" class="audioProgress" max="100" min="0" value="0" />
-                    <span id="duration" min="0" max="100">00:00</span>
-                </div>
+                    <audio src="./assets/audio/Dandelions.mp3" id="audio-play"></audio>
+                    <div class="audioPlay">
+                        <span id="currentTime">00:00</span>
+                        <input type="range" class="audioProgress" max="100" min="0" value="0" />
+                        <span id="duration" min="0" max="100">00:00</span>
+                    </div>
 
-                <div class="lastIcons">
-                    <i class="ri-speaker-line"></i>
-                    <i class="ri-repeat-line"></i>
-                    <i class="ri-shuffle-line"></i>
-                    <div>
-                        <i class="ri-volume-down-fill"></i>
-                        <input class="volumeProgress" type="range">
+                    <div class="lastIcons">
+                        <i class="ri-speaker-line"></i>
+                        <i class="ri-repeat-line"></i>
+                        <i class="ri-shuffle-line"></i>
+                        <div>
+                            <i class="ri-volume-down-fill"></i>
+                            <input class="volumeProgress" type="range">
+                        </div>
                     </div>
                 </div>
+
             </section>
+
         </aside>
         <main>
             <section>
                 <nav class="navbar">
                     <div>
-                        <a class="navLink"><i class="ri-home-2-line"></i><span>Home</span></a>
+                        <a class="navLink active"><i class="ri-home-2-line"></i><span>Home</span></a>
                         <a class="navLink"><i class="ri-fire-line"></i><span>Trends</span></a>
                         <a class="navLink"><i class="ri-search-2-line"></i><span><input type="search"
                                     placeholder="Enter song name"></span></a>
@@ -340,8 +350,8 @@
                 </section>
             </div>
         </main>
-        <script src="spotify.js"></script>
-        <!-- <script src="script.js"></script> -->
+        <!-- <script src="spotify.js"></script> -->
+        <script src="script.js"></script>
     </div>
 </body>
 
